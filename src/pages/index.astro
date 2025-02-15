@@ -2,18 +2,20 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { SITE_DESCRIPTION } from '../consts';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="it">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title="Home" description={SITE_DESCRIPTION} />
   </head>
   <body>
     <Header />
     <main>
-      <h1>🧑‍🚀 Hello, Astronaut!</h1>
+      <h1>
+        <img src="/favicon.svg" alt="icona del sito" width="50" /> Hello, Astronaut!
+      </h1>
       <p>
         Welcome to the official <a href="https://astro.build/">Astro</a> blog starter
         template. This template serves as a lightweight, minimally-styled starting

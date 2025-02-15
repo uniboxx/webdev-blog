@@ -3,7 +3,6 @@
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
 import { SITE_TITLE } from '../consts';
-import { ClientRouter } from 'astro:transitions';
 
 interface Props {
   title: string;
@@ -12,11 +11,9 @@ interface Props {
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-// console.log('1', Astro.url.pathname);
-// console.log('2', Astro.site);
-// console.log('3', canonicalURL);
 
 const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
+// console.log(new URL(image, Astro.url));
 ---
 
 <!-- Global Metadata -->
@@ -24,6 +21,7 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="sitemap" href="/sitemap-index.xml" />
+
 <link
   rel="alternate"
   type="application/rss+xml"
@@ -52,7 +50,7 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <link rel="canonical" href={canonicalURL} />
 
 <!-- Primary Meta Tags -->
-<title>{title}</title>
+<title>{`${SITE_TITLE} | ${title}`}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
 
@@ -69,5 +67,3 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
-
-<ClientRouter />
