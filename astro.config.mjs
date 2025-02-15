@@ -9,5 +9,6 @@ import netlify from '@astrojs/netlify';
 export default defineConfig({
   site: 'https://wedev-blog.netlify.app',
   integrations: [mdx(), sitemap()],
+  output: 'server',
   adapter: netlify(),
 });
