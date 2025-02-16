@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/BlogPost.astro';
 import hero from '@images/hero.jpg';
-console.log(hero);
 import * as about from '../content/about.md';
 import { Content as AboutContent } from '../content/about.md';
 ---
@@ -10,7 +9,8 @@ import { Content as AboutContent } from '../content/about.md';
   title={about.frontmatter.title}
   description="Lorem ipsum dolor sit amet"
   pubDate={new Date(about.frontmatter.pubDate)}
-  imageWithAlt={{ image: hero, alt: 'coding' }}
+  cover={hero}
+  coverAlt="Esempio di codice"
 >
   <AboutContent />
 </Layout>

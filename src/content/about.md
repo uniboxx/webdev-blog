@@ -1,6 +1,8 @@
 ---
 title: 'Passione per lo sviluppo web'
 pubDate: '2025-02-16'
+cover: '../assets/images/hero.jpg'
+coverAlt: 'Esempio di codice'
 ---
 
 Ciao, sono Davide, se sei giunto qui probabilmente condividi con me la passione per lo sviluppo
