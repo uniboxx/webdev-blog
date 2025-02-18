@@ -57,9 +57,9 @@ Questo significa che se un utente imposta un font di base, ad esempio, a 32 pixe
 _Visualizzazione pagina su schermo laptop (1280px) con font di base a 32px e breakpoint in px_
 
 Siamo abituati a pensare alle media query come grandezza dello schermo, ma sarebbe più appropriato pensare in termini di spazio disponibile.
-Ecco che usando i rem si dice al browser di renderizzare la pagina in base allo spazio, che è influenzato dalle impostazioni del browser.
+Ecco che usando i rem si dice al browser di usare il layout appropriato in base allo spazio disponibile, che è influenzato dalle impostazioni del browser.
 
-Usando i rem invece dei px posso scrivere 45rem (720/16px).
+Considerando che 720/16px = 45:
 
 ```css
 @media screen and (min-width: 45rem) {
@@ -75,7 +75,7 @@ Usando i rem invece dei px posso scrivere 45rem (720/16px).
 
 Se il font size del browser non è stato modificato non cambia nulla, avrò il layout ad una colonna sotto i 720px e il layout a 2 colonne sopra quella soglia.
 
-Se il browser ha un font di base di 32 pixel la media query si attiverà a (32\*45 = 1440px) per cui sul laptop continuerò ad avere una vista "mobile".
+Se, invece, il browser ha un font di base di 32 pixel la media query si attiverà a (32\*45 = 1440px) per cui sul laptop continuerò ad avere una vista "mobile".
 
 ![Visualizzazione pagina su schermo
   laptop con font di base a 32px](@images/page-32px-width-breakpoint-in-rem.png)
