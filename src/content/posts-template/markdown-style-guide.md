@@ -1,16 +1,16 @@
 ---
-title: 'Markdown Style Guide'
-description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
+title: 'Guida a Markdown'
+description: 'Ecco alcuni esempi di sintassi Markdown che può essere usata quando si scrivono contenuti Markdown.'
 pubDate: 'Jun 19 2024'
 cover: '../../assets/images/css.jpg'
 coverAlt: 'Esempio di codice css'
 ---
 
-Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
+Ecco alcuni esempi di sintassi Markdown che può essere usata quando si scrivono contenuti Markdown
 
-## Headings
+## Titoli
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+I seguenti eleemnti HTML `<h1>`—`<h6>` rappresentano sei livelli di titoli. `<h1>` è il più elevato, `<h6>` il più basso.
 
 # H1
 
@@ -24,61 +24,61 @@ The following HTML `<h1>`—`<h6>` elements represent six levels of section head
 
 ###### H6
 
-## Paragraph
+## Paragrafo
 
 Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
 
 Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
 
-## Images
+## Immagini
 
-### Syntax
+### Sintassi
 
 ```markdown
 ![Alt text](./full/or/relative/path/of/image)
 ```
 
-### Output
+### Risultato
 
-![blog placeholder](/blog-placeholder-about.jpg)
+![blog placeholder](@images/hero.jpg)
 
-## Blockquotes
+## Citazioni
 
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
+L'elemento blockquote rappresenta un contenuto che è citato da un'altra fonte, e può avere anche un riferimento alla fonte che può essere all'interno di un elemento `footer`o `cite`, e opzionalmente con modifiche come annotazioni e abbreviazioni.
 
-### Blockquote without attribution
+### Citazione senza riferimenti
 
-#### Syntax
+#### Sintassi
 
 ```markdown
 > Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
-> **Note** that you can use _Markdown syntax_ within a blockquote.
+> **Nota** che puoi usare la sintassi Markdonw all'interno di una citazione.
 ```
 
-#### Output
+#### Risultato
 
 > Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
-> **Note** that you can use _Markdown syntax_ within a blockquote.
+> **Nota** che puoi usare la sintassi Markdonw all'interno di una citazione.
 
-### Blockquote with attribution
+### Citazione con riferimento
 
-#### Syntax
+#### Sintassi
 
 ```markdown
 > Don't communicate by sharing memory, share memory by communicating.<br>
 > — <cite>Rob Pike[^1]</cite>
 ```
 
-#### Output
+#### Risultato
 
 > Don't communicate by sharing memory, share memory by communicating.<br>
 > — <cite>Rob Pike[^1]</cite>
 
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
+[^1]: La citazione sopra è estratta dal [discorso] (https://www.youtube.com/watch?v=PAAkCSZUG1c) di Rob Pike's durante il Gopherfest, 18 Novembre, 2015.
 
-## Tables
+## Tabelle
 
-### Syntax
+### Sintassi
 
 ```markdown
 | Italics   | Bold     | Code   |
@@ -86,17 +86,17 @@ The blockquote element represents content that is quoted from another source, op
 | _italics_ | **bold** | `code` |
 ```
 
-### Output
+### Risultato
 
 | Italics   | Bold     | Code   |
 | --------- | -------- | ------ |
 | _italics_ | **bold** | `code` |
 
-## Code Blocks
+## Blocchi di codice
 
-### Syntax
+### Sintassi
 
-we can use 3 backticks ``` in new line and write snippet and close with 3 backticks on new line and to highlight language specific syntax, write one word of language name after first 3 backticks, for eg. html, javascript, css, markdown, typescript, txt, bash
+Si possono usare 3 apici inversi ``` su una nuova riga, scrivere il codice e chiudere con 3 apici inversi in una nuova riga e evidenziare il linguaggio con una sintassi specifica scrivendo il nome del linguaggio con una parola dopo i primi 3 apici inversi, per esempio html, javascript, css, markdown, typescript, txt, bash
 
 ````markdown
 ```html
@@ -113,7 +113,7 @@ we can use 3 backticks ``` in new line and write snippet and close with 3 backti
 ```
 ````
 
-### Output
+### Risultato
 
 ```html
 <!DOCTYPE html>
@@ -128,11 +128,11 @@ we can use 3 backticks ``` in new line and write snippet and close with 3 backti
 </html>
 ```
 
-## List Types
+## Tipi di liste
 
-### Ordered List
+### Liste ordinate
 
-#### Syntax
+#### Sintassi
 
 ```markdown
 1. First item
@@ -140,15 +140,15 @@ we can use 3 backticks ``` in new line and write snippet and close with 3 backti
 3. Third item
 ```
 
-#### Output
+#### Risultato
 
 1. First item
 2. Second item
 3. Third item
 
-### Unordered List
+### Liste non ordinate
 
-#### Syntax
+#### Sintassi
 
 ```markdown
 - List item
@@ -156,15 +156,15 @@ we can use 3 backticks ``` in new line and write snippet and close with 3 backti
 - And another item
 ```
 
-#### Output
+#### Risultato
 
 - List item
 - Another item
 - And another item
 
-### Nested list
+### Liste nidificate
 
-#### Syntax
+#### Sintassi
 
 ```markdown
 - Fruit
@@ -176,7 +176,7 @@ we can use 3 backticks ``` in new line and write snippet and close with 3 backti
   - Cheese
 ```
 
-#### Output
+#### Risultato
 
 - Fruit
   - Apple
@@ -186,9 +186,9 @@ we can use 3 backticks ``` in new line and write snippet and close with 3 backti
   - Milk
   - Cheese
 
-## Other Elements — abbr, sub, sup, kbd, mark
+## Altri elementi — abbr, sub, sup, kbd, mark
 
-### Syntax
+### Sintassi
 
 ```markdown
 <abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
@@ -197,12 +197,12 @@ H<sub>2</sub>O
 
 X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 
-Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> to end the session.
+Premi <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> per terminare la sessione.
 
 Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
 ```
 
-### Output
+### Risultato
 
 <abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
 
@@ -210,6 +210,6 @@ H<sub>2</sub>O
 
 X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 
-Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> to end the session.
+Premi <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> per terminare la sessione.
 
 Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.

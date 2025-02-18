@@ -1,30 +1,14 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_DESCRIPTION } from '../consts';
 import { getCollection, render } from 'astro:content';
+import BlogPost from 'src/layouts/BlogPost.astro';
 
 const lastPost = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 )[0];
+
 const { Content: LastPostContent } = await render(lastPost);
 ---
 
-<!doctype html>
-<html lang="it">
-  <head>
-    <BaseHead title="Home" description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <Header />
-    <main>
-      <h1>
-        <img src="/favicon.svg" alt="icona del sito" width="50" />
-        {lastPost.data.title}
-      </h1>
-      <LastPostContent />
-    </main>
-    <Footer />
-  </body>
-</html>
+<BlogPost {...lastPost.data}>
+  <LastPostContent />
+</BlogPost>

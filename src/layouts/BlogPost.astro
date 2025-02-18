@@ -5,6 +5,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import { Image } from 'astro:assets';
+import hero from '@images/hero.jpg';
 
 type Props = CollectionEntry<'blog'>['data'];
 
@@ -25,8 +26,8 @@ const { title, description, pubDate, updatedDate, cover, coverAlt } =
           {
             cover && (
               <Image
-                src={cover}
-                alt={coverAlt ?? 'Blog post image'}
+                src={cover ?? hero}
+                alt={coverAlt ?? 'Coding'}
                 loading="eager"
               />
             )
@@ -60,14 +61,7 @@ const { title, description, pubDate, updatedDate, cover, coverAlt } =
     max-width: 36rem;
     margin: auto;
   }
-  .hero-imageWithAlt {
-    width: 100%;
-  }
-  .hero-imageWithAlt img {
-    margin: 0 auto;
-    border-radius: 12px;
-    box-shadow: var(--box-shadow);
-  }
+
   .prose {
     max-width: 36rem;
     margin: auto;
@@ -85,6 +79,7 @@ const { title, description, pubDate, updatedDate, cover, coverAlt } =
   .last-updated-on {
     font-style: italic;
   }
+
   @media screen and (min-width: 40rem) {
     .prose {
       padding: 1em;

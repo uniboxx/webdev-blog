@@ -110,14 +110,27 @@ img {
   height: auto;
   border-radius: 8px;
 }
+p:has(img) {
+  > img {
+    border: 1px solid gray;
+    + em {
+      display: block;
+      text-align: center;
+      margin-top: -10px;
+      font-size: 0.8rem;
+      font-style: italic;
+    }
+  }
+}
 code {
   padding: 2px 5px;
   background-color: rgb(var(--gray-light));
   border-radius: 2px;
 }
 pre {
-  padding: 1.5em;
+  padding: 2em 1em;
   border-radius: 8px;
+  margin-bottom: 1em;
 }
 pre > code {
   all: unset;
@@ -126,7 +139,7 @@ blockquote {
   border-left: 4px solid var(--accent);
   padding: 0 0 0 20px;
   margin: 0px;
-  font-size: 1.333em;
+  font-size: 1em;
 }
 hr {
   border: none;
