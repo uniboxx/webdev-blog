@@ -11,7 +11,6 @@
   margin: 0;
 }
 :root {
-  --basefz: 20px;
   --accent: #2337ff;
   --accent-dark: #000d8a;
   --black: 15, 18, 25;
@@ -38,7 +37,7 @@
 }
 
 html {
-  font-size: var(--basefz);
+  font-size: 112.5%;
 }
 
 body {
@@ -134,9 +133,9 @@ hr {
   border-top: 1px solid rgb(var(--gray-light));
 }
 @media screen and (min-width: 40rem) {
-  /* html {
-    font-size: calc(var(--basefz) + 2px);
-  } */
+  html {
+    font-size: 125%;
+  }
   main {
     padding: 3rem 1em;
   }

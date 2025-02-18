@@ -6,7 +6,8 @@
     "strictNullChecks": true,
     "baseUrl": "./",
     "paths": {
-      "@images/*": ["src/assets/images/*"]
+      "@images/*": ["src/assets/images/*"],
+      "@blog/*": ["src/content/blog/*"]
     }
   }
 }
