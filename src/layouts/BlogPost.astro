@@ -92,3 +92,9 @@ const { title, description, pubDate, updatedDate, cover, coverAlt } =
     }
   }
 </style>
+
+<script>
+  const pres = document.querySelectorAll('pre');
+
+  pres.forEach((pre) => pre.removeAttribute('tabindex'));
+</script>
