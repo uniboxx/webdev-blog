@@ -37,7 +37,7 @@
 }
 
 html {
-  font-size: 112.5%;
+  font-size: 125%;
 }
 
 body {
@@ -146,9 +146,6 @@ hr {
   border-top: 1px solid rgb(var(--gray-light));
 }
 @media screen and (min-width: 40rem) {
-  html {
-    font-size: 125%;
-  }
   main {
     padding: 3rem 1em;
   }
